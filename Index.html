@@ -10,22 +10,14 @@
   <script src="https://kit.fontawesome.com/d95e1dcf4f.js" crossorigin="anonymous"></script>
   <link rel ="stylesheet" href ="style.css">
 
-  <style>
-  
-  
-
-
-
-  </style>
  </head>
  
  <body>
  
-  <header>
-  <p>Eco</p>
-  <p>Feel Free, Feel Strong</p>
-  </header>
- 
+  <header style = " background-color: #000000;">
+  <h1 style = " color: #ffffff;">Eco</h1>
+  <h2 style = "text-align: center; color: #ffffff">Feel Free, Feel Strong</h2>
+  
   <div id = "mySidenav" class = "sidenav">
    <a href = "javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
    <a href="#">About</a>
@@ -33,7 +25,7 @@
    <a href="#">Contact</a>
   </div>
   
-  <span style="font-size:30px;cursor:pointer; float: right;" onclick="openNav()">&#9776;</span>
+  <span style="font-size:30px;cursor:pointer; float: right; color: #ffffff;" onclick="openNav()">&#9776;</span>
 
   <script>
    function openNav() {
@@ -44,6 +36,35 @@
      document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+<div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/auto%20slide%20show/rack%20of%20shirts%202.jpg?raw=true" style="width:100%">
+  <img class="mySlides" src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/auto%20slide%20show/rack%20of%20shirts.jpg?raw=true" style="width:100%">
+  <img class="mySlides" src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/auto%20slide%20show/shirt%202.jpg?raw=true" style="width:100%">
+  <img class="mySlides" src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/auto%20slide%20show/shirt%20rack%203.jpg?raw=true" style="width:100%">
+  <img class="mySlides" src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/auto%20slide%20show/shirt.jpg?raw=true" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+  </header>
+ 
+
 
     <div class="squares-wrapper">
       <div class="squares">
