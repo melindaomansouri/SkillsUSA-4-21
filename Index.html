@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="Hunter">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="https://kit.fontawesome.com/d95e1dcf4f.js" crossorigin="anonymous"></script>
+  <link rel ="stylesheet" src ="style.css">
+
+  <style>
+  
+  .sidenav{
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   background-color:#111;
+   overglow-x: hidden;
+   transition: 0.5s;
+   paddint-top: 60px;
+  }
+  
+  .sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size:25px;
+   color:#818181;
+   display: block;
+   transition: 0.3s;
+  }
+  
+  .sidenav a:hover{
+  color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.footcontent{
+text-align: center;
+}
+
+*{
+box-sizing: border-box;
+}
+
+.column{
+float :left;
+width: 33.33%;
+padding: 5px;
+max-width: 50px;
+}
+
+.row::after {
+content:"";
+clear: both;
+display: table;
+}
+  </style>
+ </head>
+ 
+ <body>
+ 
+  <header>
+  <p>Eco</p>
+  <p>Feel Free, Feel Strong</p>
+  </header>
+ 
+  <div id = "mySidenav" class = "sidenav">
+   <a href = "javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
+   <a href="#">About</a>
+   <a href="#">Products</a>
+   <a href="#">Contact</a>
+  </div>
+  
+  <span style="font-size:30px;cursor:pointer; float: right;" onclick="openNav()">&#9776;</span>
+
+  <script>
+   function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+    <div class="squares-wrapper">
+      <div class="squares">
+          <div class="square">
+            <div class="img-wrapper">
+              <img src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/grid%20photos%20for%20main%20content%20area/rack%20of%20clothes.jpg?raw=true" alt="Fries">
+            </div>
+              <div class="square-text-wrapper">
+                  <a href="#spicy" name="spicy" class="anchor-link">
+                    <h1>Spicy</h1>
+                  </a>
+ 
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>Cupiditate facilis tempora mollitia, nulla perspiciatis corporis quisquam!</li>
+                    <li>Quis repellat iusto distinctio quas iure eaque aut?</li>
+                    <li>Explicabo in omnis quam aliquid molestias optio cumque?</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="square">
+              <div class="square-text-wrapper">
+                    <a href="#medium" name="medium" class="anchor-link">
+                        <h1>Medium</h1>
+                    </a>
+ 
+                  <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>Cupiditate facilis tempora mollitia, nulla perspiciatis corporis quisquam!</li>
+                    <li>Quis repellat iusto distinctio quas iure eaque aut?</li>
+                    <li>Explicabo in omnis quam aliquid molestias optio cumque?</li>
+                  </ol>
+              </div>
+              <div class="img-wrapper">
+                <img src="https://github.com/melindaomansouri/SkillsUSA-4-21/blob/Work1/images/grid%20photos%20for%20main%20content%20area/hats%20for%20grid.jpg?raw=true" alt="Fries">
+              </div>
+          </div>
+      </div>
+  </div>
+
+  
+  <footer>
+   <p>Eco</p>
+   <div class ="row">
+    <div class = "column">
+     <i class="fab fa-facebook"></i>
+	</div>
+	<div class = "column">
+	 <i class="fab fa-instagram"></i>
+	</div>
+	<div class = "column">
+     <i class="fab fa-twitter"></i>
+	 </div>
+   </div>
+   <p class = "footcontent">terms of use</p>
+   <p class = "footcontent">privacy policy</p>
+   <p class = "footcontent">&copy; 2021 copyright</p>
+   
+  </footer>
+  
+  
+ </body>
+</html>
